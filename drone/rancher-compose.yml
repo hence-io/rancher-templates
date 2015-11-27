@@ -1,12 +1,14 @@
+drone-leader:
+  scale: 1
+  labels:
+    io.rancher.scheduler.affinity:host_label: io.rancher.drone.role=leader
+
+drone-followers:
+  scale: 1
+  labels:
+    io.rancher.scheduler.affinity:host_label: io.rancher.drone.role=follower
+
 volume-cleanup:
   scale: 1
   labels:
     io.rancher.scheduler.global: 'true'
-drone-army-01:
-  scale: 1
-  labels:
-    io.rancher.scheduler.affinity:host_label: io.rancher.drone.role=follower
-drone-master:
-  scale: 1
-  labels:
-    io.rancher.scheduler.affinity:host_label: io.rancher.drone.role=master
