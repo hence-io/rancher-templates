@@ -1,0 +1,2 @@
+logrotate:
+  scale: 1

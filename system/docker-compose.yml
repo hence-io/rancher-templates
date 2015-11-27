@@ -1,0 +1,5 @@
+logrotate:
+  restart: always
+  image: tutum/logrotate:latest
+  volumes:
+  - /var/lib/docker/containers:/var/lib/docker/containers:rw
